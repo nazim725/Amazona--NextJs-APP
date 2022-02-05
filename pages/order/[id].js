@@ -13,7 +13,7 @@ import {
   TableRow,
   Typography,
 } from "@material-ui/core";
-import React, { useContext, useEffect, useState, useReducer } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 
@@ -59,7 +59,7 @@ const Order = ({ params }) => {
   const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
   const { state } = useContext(Store);
   const { userInfo } = state;
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   const router = useRouter();
   const classes = useStyles();

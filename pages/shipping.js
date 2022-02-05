@@ -1,6 +1,5 @@
 import {
   Button,
-  Link,
   List,
   ListItem,
   TextField,
@@ -9,7 +8,6 @@ import {
 import React, { useContext, useEffect } from "react";
 import Layout from "../Components/Layout";
 import useStyles from "../utils/styles";
-import NextLink from "next/link";
 import { Store } from "../utils/Store";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
@@ -27,7 +25,7 @@ const Shipping = () => {
 
   const router = useRouter();
   const classes = useStyles();
-  const { redirect } = router.query;
+
   const { state, dispatch } = useContext(Store);
   const {
     userInfo,

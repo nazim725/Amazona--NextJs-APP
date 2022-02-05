@@ -3,7 +3,7 @@ import db from "../../../utils/db";
 import User from "../../../models/User";
 import bcrypt from "bcryptjs";
 import { isAuth, signToken } from "../../../utils/auth";
-import bcryptjs from "bcryptjs";
+
 const handler = nc();
 handler.use(isAuth);
 

@@ -6,7 +6,7 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Layout from "../Components/Layout";
 import useStyles from "../utils/styles";
 import NextLink from "next/link";
@@ -136,7 +136,7 @@ const Login = () => {
             </Button>
           </ListItem>
           <ListItem>
-            Don't have an account?{" "}
+            Don`t have an account?{" "}
             <NextLink href={`/register`} passHref>
               <Link>Register</Link>
             </NextLink>
